@@ -1,5 +1,5 @@
 
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="zh-CN">
 
 <head>
   <meta charset="utf-8">
@@ -26,9 +26,9 @@
 <meta property="og:url" content="https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/">
 <meta property="og:site_name" content="Knowei Blog">
 <meta property="og:description" content="为什么需要加密因为在http传输数据的时候是通过明文传输的，这样如果在中间被一些别有用心的人给截取了，那么信息就不安全了，所以我们需要进行数据加密，首先是对称加密 对称加密客服端和服务端都持有一个相同的密钥，在进行数据传输的时候使用该密钥进行加密解密，这样数据就是安全的 但是如何保证它们的密钥是相同的呢，难道服务端将密钥生成发送给客户端吗，这样明显是不安全的，在安装浏览器的时候将服务端的密钥一次性">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-03T08:30:05.605Z">
-<meta property="article:modified_time" content="2025-11-04T03:28:19.278Z">
+<meta property="article:modified_time" content="2025-11-05T06:26:39.839Z">
 <meta property="article:author" content="knowei">
 <meta name="twitter:card" content="summary">
   
@@ -46,7 +46,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"knowei","sameAs":[]},"dateCreated":"2025-11-03T16:30:05+08:00","dateModified":"2025-11-04T11:28:19+08:00","datePublished":"2025-11-03T16:30:05+08:00","description":"","headline":"http加密","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/"},"publisher":{"@type":"Organization","name":"knowei","sameAs":[]},"url":"https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"knowei","sameAs":[]},"dateCreated":"2025-11-03T16:30:05+08:00","dateModified":"2025-11-05T14:26:39+08:00","datePublished":"2025-11-03T16:30:05+08:00","description":"","headline":"http加密","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/"},"publisher":{"@type":"Organization","name":"knowei","sameAs":[]},"url":"https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/","image":[]}</script>
   
 </head>
 <body>
@@ -61,11 +61,11 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
-<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="Search"></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div>
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
 
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/2025/11/03/http%E5%8A%A0%E5%AF%86/"><span class="title">http加密</span></a><a class="item title" href="/2025/11/03/hello-world/"><span class="title">Hello World</span></a></div></widget>
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/11/03/http%E5%8A%A0%E5%AF%86/"><span class="title">http加密</span></a></div></widget>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/knowei" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/></a></div></footer>
 </div></aside><div class="l_main" id="main">
@@ -76,9 +76,9 @@
 
 <div class="article banner top">
   <div class="content">
-    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/GalGame/">GalGame</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2025-11-03T08:30:05.605Z">2025-11-03</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2025-11-04T03:28:19.278Z">2025-11-04</time></span></div></div></div>
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/GalGame/">GalGame</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-11-03T08:30:05.605Z">2025-11-03</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-11-05T06:26:39.839Z">2025-11-05</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -120,19 +120,33 @@
 </blockquote>
 <p>这样看起来是不是没有问题，但是如何保证公钥是服务端发布的呢，这个时候就需要一个可信任的第三方机构，也就是CA机构</p>
 <h2 id="CA机构"><a href="#CA机构" class="headerlink" title="CA机构"></a>CA机构</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xdyixia/p/11610102.html">HTTPS中CA证书的签发及使用过程 - xdyixia - 博客园 (cnblogs.com)</a></p>
-<p>a.<strong>服务方S</strong>向第三方机构CA<strong>提交</strong>公钥、组织信息、个人信息(域名)等信息并申请认证;<strong>（不交私钥）</strong><br>b.<strong>CA</strong>通过线上、线下等多种手段<strong>验证</strong>申请者提供信息的真实性，如组织是否存在、企业是否合法，是否拥有域名的所有权等;<br>c.如信息审核通过，<strong>CA</strong>会向申请者签发认证文件-证书。<br>   证书包含以下信息：<strong>申请者公钥</strong>、申请者的组织信息和个人信息、签发机构<strong>CA的信息</strong>、有效时间、证书序列号等信息的明文，同时包含<strong>一个签名</strong>;<br>   <strong>签名的产生算法</strong>：首先，<strong>使用散列函数计算公开的明文信息</strong>的<strong>信息摘要</strong>，然后，采用<strong>CA的私钥</strong>对信息摘要进行<strong>加密</strong>，<strong>密文即签名</strong>;<br>d.<strong>客户端 C</strong> 向服务器 S 发出请求时，<strong>S 返回证书</strong>文件;<br>e.<strong>客户端 C</strong>读取证书中的相关的明文信息，<strong>采用相同的散列函数</strong>计算得到<strong>信息摘要</strong>，然后，利用<strong>对应CA的公钥</strong>解密签名数据，<strong>对比证书的信息摘要</strong>，如果一致，则可以确认证书的合法性，即公钥合法;<br>f.<strong>客户端</strong>然后验证证书相关的域名信息、有效时间等信息;<br>g.<strong>客户端</strong>会*<em>内置信任</em>***CA的证书信息(包含公钥)**，如果CA不被信任，则找不到对应 CA的证书，证书也会被判定非法。</p>
+<p>a.<strong>服务方S</strong>向第三方机构CA<strong>提交</strong>公钥、组织信息、个人信息(域名)等信息并申请认证;<strong>（不交私钥）</strong><br>b.<strong>CA</strong>通过线上、线下等多种手段<strong>验证</strong>申请者提供信息的真实性，如组织是否存在、企业是否合法，是否拥有域名的所有权等;<br>c.如信息审核通过，<strong>CA</strong>会向申请者签发认证文件-证书。<br>   证书包含以下信息：<strong>申请者公钥</strong>、申请者的组织信息和个人信息、签发机构<strong>CA的信息</strong>、有效时间、证书序列号等信息的明文，同时包含<strong>一个签名</strong>;<br>   <strong>签名的产生算法</strong>：首先，<strong>使用散列函数计算公开的明文信息</strong>的<strong>信息摘要</strong>，然后，采用<strong>CA的私钥</strong>对信息摘要进行<strong>加密</strong>，<strong>密文即签名</strong>;<br>d.<strong>客户端 C</strong> 向服务器 S 发出请求时，<strong>S 返回证书</strong>文件;<br>e.<strong>客户端 C</strong>读取证书中的相关的明文信息，<strong>采用相同的散列函数</strong>计算得到<strong>信息摘要</strong>，然后，利用<strong>对应CA的公钥</strong>解密签名数据，<strong>对比证书的信息摘要</strong>，如果一致，则可以确认证书的合法性，即公钥合法;<br>f.<strong>客户端</strong>然后验证证书相关的域名信息、有效时间等信息;<br>g.<strong>客户端</strong>会**内置信任CA的证书信息(包含公钥)**，如果CA不被信任，则找不到对应 CA的证书，证书也会被判定非法。</p>
 </article>
 <div class="article-footer">
     <section id="license">
-      <div class="header"><span>License</span></div>
+      <div class="header"><span>许可协议</span></div>
       <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div>
     </section>
     
 
-</div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">Older</div><a href="/2025/11/03/hello-world/">Hello World</a></div></section></div>
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/&title=http加密 - Knowei Blog&summary=为什么需要加密因为在http传输数据的时候是通过明文传输的，这样如果在中间被一些别有用心的人给截取了，那么信息就不安全了，所以我们需要进行数据加密，首先是对称加密
+对称加密客服端和服务端都持有一个相同的密钥，在进行数据传输的时候使用该..."><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=http加密 - Knowei Blog&amp;body=https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://knowei.github.io/2025/11/03/http%E5%8A%A0%E5%AF%86/"/>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+
+
 
 
 
@@ -159,7 +173,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%8A%A0%E5%AF%86"><span class="toc-text">为什么需要加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">对称加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">非对称加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https%E9%87%87%E7%94%A8%E7%9A%84%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86-%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">https采用的非对称加密+对称加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CA%E6%9C%BA%E6%9E%84"><span class="toc-text">CA机构</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>Scroll to Top</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10c0-1.821-.487-3.53-1.338-5"/></svg><span>Join Discussion</span></a></div></widget>
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%8A%A0%E5%AF%86"><span class="toc-text">为什么需要加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">对称加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">非对称加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https%E9%87%87%E7%94%A8%E7%9A%84%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86-%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">https采用的非对称加密+对称加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CA%E6%9C%BA%E6%9E%84"><span class="toc-text">CA机构</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10c0-1.821-.487-3.53-1.338-5"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
@@ -175,10 +189,10 @@
   window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
   const ctx = {
     date_suffix: {
-      just: `Just`,
-      min: `minutes ago`,
-      hour: `hours ago`,
-      day: `days ago`,
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
     },
     root : `/`,
     tag_plugins: {
@@ -633,9 +647,9 @@
     utils.dark.method.toggle.start();
 
     const messages = {
-      light: `Switched to Light Mode`,
-      dark: `Switched to Dark Mode`,
-      auto: `Switched to Auto Mode`,
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
     }
     hud?.toast?.(messages[newTheme])
   }
